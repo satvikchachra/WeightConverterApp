@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Weight Converter</title>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-4">
+                    <b>Weight Converter</b>
+                </h1>
+                <form>
+                    <div class="form-group">
+                        <input id="weightInput"
+                         type="number" 
+                         class="form-control form-control-sm mb-3" 
+                         placeholder="Enter kilograms">
+
+                         <select id='weight-type' class="form-control form-control-sm mb-3">
+                             <option>Kilograms</option>
+                             <option>Grams</option>
+                             <option>Ounces</option>
+                             <option>Pounds</option>
+                         </select>
+                    </div>
+
+                    
+                </form>
+                <div id="output">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-body">
+                            
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success text-white mb-3">
+                        <div class="card-body">
+                            
+                            <div id="poundsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger text-white mb-3">
+                        <div class="card-body">
+                            
+                            <div id="ouncesOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
